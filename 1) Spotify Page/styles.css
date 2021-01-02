@@ -51,7 +51,7 @@ Variables
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   /* width */
-  --max-width: 1170px;
+  --max-width: 1280px;
 }
 
 /*
@@ -457,9 +457,6 @@ sup {
   =========================
   */
 
-.sec-3-center {
-  padding: 0 4rem;
-}
 .sec-3-img {
   height: 17rem;
   width: 17rem;
@@ -485,7 +482,14 @@ sup {
 @media screen and (min-width: 1200px) {
   .sec-3-center {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 3rem;
+    column-gap: 2rem;
+  }
+  .sec-3-img {
+    height: 15rem;
+    width: 15rem;
+  }
+  .sec-3-item-info {
+    width: 15rem;
   }
 }
 
