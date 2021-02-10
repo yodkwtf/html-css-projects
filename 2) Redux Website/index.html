@@ -22,14 +22,46 @@
   </head>
   <body>
     <!-- NAVBAR -->
+    <nav class="nav">
+      <div class="nav-center">
+        <div class="nav-logo">
+          <span
+            ><div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div
+          ></span>
+          <img src="./images/redux-logo.png" alt="redux-logo" />
+          <h4>Redux</h4>
+        </div>
+        <div class="nav-col2">
+          <!-- links -->
+          <ul class="nav-links">
+            <li><a href="#" class="nav-link">Getting Started</a></li>
+            <li><a href="#" class="nav-link">Tutorial</a></li>
+            <li><a href="#" class="nav-link">API</a></li>
+            <li><a href="#" class="nav-link">FAQ</a></li>
+            <li><a href="#" class="nav-link">Best Practices</a></li>
+            <li><a href="#" class="nav-link">GitHub</a></li>
+            <li><a href="#" class="nav-link">Need help?</a></li>
+            <li>
+              <button id="toggle-btn"><span id="toggle-emoji"></span>🌞</button>
+            </li>
+          </ul>
+          <!-- search-btn -->
+          <p class="search">
+            <i class="fas fa-search"></i
+            ><input type="text" placeholder="Search" /><button>ctrl</button
+            ><button>K</button>
+          </p>
+        </div>
+      </div>
+    </nav>
     <!-- END OF NAVBAR -->
 
     <!-- AD BOX -->
     <div class="ad-box">
-      <p>
-        black lives matter.
-        <a>support the equal justice initiative.</a>
-      </p>
+      <p>black lives matter.</p>
+      <p id="sp-text">support the equal justice initiative.</p>
     </div>
     <!-- END OF AD BOX -->
 
@@ -179,4 +211,37 @@
     </footer>
     <!-- END OF FOOTER -->
   </body>
+
+  <!-- JAVASCRIPT FOR DARK MODE -->
+  <script>
+    let theme = 'light-theme';
+    window.addEventListener('DOMContentLoaded', () => {
+      document.documentElement.className = theme;
+    });
+    document.getElementById('toggle-btn').addEventListener('click', () => {
+      if (theme === 'light-theme') {
+        theme = 'dark-theme';
+        darkMode();
+      } else {
+        theme = 'light-theme';
+        lightMode();
+      }
+      document.documentElement.className = theme;
+    });
+
+    // functions
+    const darkMode = () => {
+      document.getElementById('toggle-btn').innerHTML =
+        '<span id="toggle-emoji"></span>🌜';
+      document.getElementById('toggle-btn').style.textAlign = 'left';
+      ('all 0.2s linear');
+      document.getElementById('toggle-emoji').style.left = '40%';
+    };
+    const lightMode = () => {
+      document.getElementById('toggle-btn').innerHTML =
+        '<span id="toggle-emoji"></span>🌞';
+      document.getElementById('toggle-btn').style.textAlign = 'right';
+      document.getElementById('toggle-emoji').style.left = '-10%';
+    };
+  </script>
 </html>
