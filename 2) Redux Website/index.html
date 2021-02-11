@@ -44,7 +44,7 @@
             <li><a href="#" class="nav-link">GitHub</a></li>
             <li><a href="#" class="nav-link">Need help?</a></li>
             <li>
-              <button id="toggle-btn"><span id="toggle-emoji"></span>🌞</button>
+              <button class="toggle-btn"></button>
             </li>
           </ul>
           <!-- search-btn -->
@@ -58,180 +58,214 @@
     </nav>
     <!-- END OF NAVBAR -->
 
-    <!-- AD BOX -->
-    <div class="ad-box">
-      <p>black lives matter.</p>
-      <p id="sp-text">support the equal justice initiative.</p>
-    </div>
-    <!-- END OF AD BOX -->
-
-    <!-- BANNER -->
-    <div class="banner">
-      <h1 class="banner-title">Redux</h1>
-      <h3 class="banner-subtitle">a predictable state container for JS apps</h3>
-      <a href="#" class="banner-btn">get started</a>
-    </div>
-    <!-- END OF BANNER -->
-
-    <!-- SERVICES -->
-    <section class="services">
-      <!-- single service -->
-      <article class="service">
-        <h1><i class="fas fa-check"></i></h1>
-        <h3>predictable</h3>
-        <p>
-          Redux helps you write applications that
-          <strong>behave consistently</strong>, run in different environments
-          (client, server, and native), and are <strong>easy to test</strong>.
-        </p>
-      </article>
-      <!-- end of single service -->
-
-      <!-- single service -->
-      <article class="service">
-        <h1><i class="fas fa-cubes"></i></h1>
-        <h3>centralized</h3>
-        <p>
-          Centralizing your application's state and logic enables powerful
-          capabilities like <strong>undo/redo</strong>,
-          <strong>state persistence</strong>, and much more.
-        </p>
-      </article>
-      <!-- end of single service -->
-
-      <!-- single service -->
-      <article class="service">
-        <h1><i class="fas fa-bug"></i></h1>
-        <h3>debuggable</h3>
-        <p>
-          The Redux DevTools make it easy to trace
-          <strong
-            >when, where, why, and how your application's state changed</strong
-          >. Redux's architecture lets you log changes, use
-          <strong>"time-travel debugging"</strong>, and even send complete error
-          reports to a server.
-        </p>
-      </article>
-      <!-- end of single service -->
-
-      <!-- single service -->
-      <article class="service">
-        <h1><i class="fas fa-cogs"></i></h1>
-        <h3>flexible</h3>
-        <p>
-          Redux <strong>works with any UI layer</strong>, and has
-          <strong>a large ecosystem of addons</strong> to fit your needs.
-        </p>
-      </article>
-      <!-- end of single service -->
-    </section>
-    <!-- END OF SERVICES -->
-
-    <!-- INFO -->
-    <section class="info">
-      <h3>Other Libraries from the Redux Team</h3>
-      <div class="info-center">
-        <!-- single info item -->
-        <div class="info-item">
-          <h3 class="info-title">
-            <a href="#"
-              >react-redux <i class="fas fa-external-link-square-alt"></i
-            ></a>
-          </h3>
-          <p class="info-text">Official React bindings for Redux</p>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <header>
+        <div class="nav-logo">
+          <img src="./images/redux-logo.png" alt="redux-logo" />
+          <h4>Redux</h4>
         </div>
-        <!-- end of single info item -->
+        <button class="toggle-btn"></button>
+      </header>
+      <ul class="sidebar-links">
+        <li><a href="#" class="sidebar-link">Getting Started</a></li>
+        <li><a href="#" class="sidebar-link">Tutorial</a></li>
+        <li><a href="#" class="sidebar-link">API</a></li>
+        <li><a href="#" class="sidebar-link">FAQ</a></li>
+        <li><a href="#" class="sidebar-link">Best Practices</a></li>
+        <li><a href="#" class="sidebar-link">GitHub</a></li>
+        <li><a href="#" class="sidebar-link">Need help?</a></li>
+      </ul>
+    </aside>
+    <!-- END OF SIDEBAR -->
 
-        <!-- single info item -->
-        <div class="info-item">
-          <h3 class="info-title">
-            <a href="#"
-              >redux toolkit <i class="fas fa-external-link-square-alt"></i
-            ></a>
-          </h3>
-          <p class="info-text">
-            The official, opinionated, batteries-included toolset for efficient
-            Redux development
-          </p>
-        </div>
-        <!-- end of single info item -->
+    <main>
+      <!-- AD BOX -->
+      <div class="ad-box">
+        <p>black lives matter.</p>
+        <p id="sp-text">support the equal justice initiative.</p>
       </div>
-    </section>
-    <!-- END OF INFO -->
+      <!-- END OF AD BOX -->
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-links">
-        <!-- single link box -->
-        <article>
-          <h4>docs</h4>
-          <div class="links">
-            <p><a href="#">getting started</a></p>
-            <p><a href="#">tutorial</a></p>
-            <p><a href="#">FAQ</a></p>
-            <p><a href="#">API reference</a></p>
-          </div>
+      <!-- BANNER -->
+      <div class="banner">
+        <h1 class="banner-title">Redux</h1>
+        <h3 class="banner-subtitle">
+          a predictable state container for JS apps
+        </h3>
+        <a href="#" class="banner-btn">get started</a>
+      </div>
+      <!-- END OF BANNER -->
+
+      <!-- SERVICES -->
+      <section class="services">
+        <!-- single service -->
+        <article class="service">
+          <h1><i class="fas fa-check"></i></h1>
+          <h3>predictable</h3>
+          <p>
+            Redux helps you write applications that
+            <strong>behave consistently</strong>, run in different environments
+            (client, server, and native), and are <strong>easy to test</strong>.
+          </p>
         </article>
-        <!-- end of single box -->
+        <!-- end of single service -->
 
-        <!-- single link box -->
-        <article>
-          <h4>community</h4>
-          <div class="links">
-            <p><a href="#">reactiflux discord</a></p>
-            <p><a href="#">stack overflow</a></p>
-            <p><a href="#">feedback</a></p>
-          </div>
+        <!-- single service -->
+        <article class="service">
+          <h1><i class="fas fa-cubes"></i></h1>
+          <h3>centralized</h3>
+          <p>
+            Centralizing your application's state and logic enables powerful
+            capabilities like <strong>undo/redo</strong>,
+            <strong>state persistence</strong>, and much more.
+          </p>
         </article>
-        <!-- end of single box -->
+        <!-- end of single service -->
 
-        <!-- single link box -->
-        <article>
-          <h4>more</h4>
-          <div class="links">
-            <p><a href="#">github</a></p>
-            <p>
+        <!-- single service -->
+        <article class="service">
+          <h1><i class="fas fa-bug"></i></h1>
+          <h3>debuggable</h3>
+          <p>
+            The Redux DevTools make it easy to trace
+            <strong
+              >when, where, why, and how your application's state
+              changed</strong
+            >. Redux's architecture lets you log changes, use
+            <strong>"time-travel debugging"</strong>, and even send complete
+            error reports to a server.
+          </p>
+        </article>
+        <!-- end of single service -->
+
+        <!-- single service -->
+        <article class="service">
+          <h1><i class="fas fa-cogs"></i></h1>
+          <h3>flexible</h3>
+          <p>
+            Redux <strong>works with any UI layer</strong>, and has
+            <strong>a large ecosystem of addons</strong> to fit your needs.
+          </p>
+        </article>
+        <!-- end of single service -->
+      </section>
+      <!-- END OF SERVICES -->
+
+      <!-- INFO -->
+      <section class="info">
+        <h3>Other Libraries from the Redux Team</h3>
+        <div class="info-center">
+          <!-- single info item -->
+          <div class="info-item">
+            <h3 class="info-title">
               <a href="#"
-                ><img src="./images/netlify-logo.svg" alt="netlfify"
-              /></a>
+                >react-redux <i class="fas fa-external-link-square-alt"></i
+              ></a>
+            </h3>
+            <p class="info-text">Official React bindings for Redux</p>
+          </div>
+          <!-- end of single info item -->
+
+          <!-- single info item -->
+          <div class="info-item">
+            <h3 class="info-title">
+              <a href="#"
+                >redux toolkit <i class="fas fa-external-link-square-alt"></i
+              ></a>
+            </h3>
+            <p class="info-text">
+              The official, opinionated, batteries-included toolset for
+              efficient Redux development
             </p>
           </div>
-        </article>
-        <!-- end of single box -->
-      </div>
+          <!-- end of single info item -->
+        </div>
+      </section>
+      <!-- END OF INFO -->
 
-      <!-- logo -->
-      <div class="footer-logo">
-        <a href="#"><img src="./images/redux-logo.png" alt="redux" /></a>
-      </div>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-links">
+          <!-- single link box -->
+          <article>
+            <h4>docs</h4>
+            <div class="links">
+              <p><a href="#">getting started</a></p>
+              <p><a href="#">tutorial</a></p>
+              <p><a href="#">FAQ</a></p>
+              <p><a href="#">API reference</a></p>
+            </div>
+          </article>
+          <!-- end of single box -->
 
-      <p class="footer-text">
-        Copyright © 2015–2021 Dan Abramov and the Redux documentation authors.
-      </p>
-    </footer>
-    <!-- END OF FOOTER -->
+          <!-- single link box -->
+          <article>
+            <h4>community</h4>
+            <div class="links">
+              <p><a href="#">reactiflux discord</a></p>
+              <p><a href="#">stack overflow</a></p>
+              <p><a href="#">feedback</a></p>
+            </div>
+          </article>
+          <!-- end of single box -->
+
+          <!-- single link box -->
+          <article>
+            <h4>more</h4>
+            <div class="links">
+              <p><a href="#">github</a></p>
+              <p>
+                <a href="#"
+                  ><img src="./images/netlify-logo.svg" alt="netlfify"
+                /></a>
+              </p>
+            </div>
+          </article>
+          <!-- end of single box -->
+        </div>
+
+        <!-- logo -->
+        <div class="footer-logo">
+          <a href="#"><img src="./images/redux-logo.png" alt="redux" /></a>
+        </div>
+
+        <p class="footer-text">
+          Copyright © 2015–2021 Dan Abramov and the Redux documentation authors.
+        </p>
+      </footer>
+      <!-- END OF FOOTER -->
+    </main>
   </body>
 
-  <!-- JAVASCRIPT FOR DARK MODE -->
+  <!-- JAVASCRIPT -->
   <script>
+    //  FOR DARK MODE
     let theme = 'light';
     window.addEventListener('DOMContentLoaded', () => changeTheme('🌞', theme));
-    document.getElementById('toggle-btn').addEventListener('click', () => {
-      if (theme === 'light') {
-        theme = 'dark';
-        changeTheme('🌜', theme);
-      } else {
-        theme = 'light';
-        changeTheme('🌞', theme);
-      }
+    document.querySelectorAll('.toggle-btn').forEach((item) => {
+      item.addEventListener('click', () => {
+        if (theme === 'light') {
+          theme = 'dark';
+          changeTheme('🌜', theme);
+        } else {
+          theme = 'light';
+          changeTheme('🌞', theme);
+        }
+      });
     });
-
-    // function to toggle theme
     const changeTheme = (emoji, theme) => {
       document.documentElement.className = theme;
-      document.getElementById(
-        'toggle-btn'
-      ).innerHTML = `<span id="toggle-emoji"></span>${emoji}`;
+      document.querySelectorAll('.toggle-btn').forEach((item) => {
+        item.innerHTML = `<span class="toggle-emoji"></span>${emoji}`;
+      });
     };
+    // FOR SIDEBAR
+    document.querySelector('.nav-logo span').addEventListener('click', () => {
+      document.querySelector('.sidebar').classList.add('show-sidebar');
+    });
+    document.querySelector('main').addEventListener('click', () => {
+      document.querySelector('.sidebar').classList.remove('show-sidebar');
+    });
   </script>
 </html>

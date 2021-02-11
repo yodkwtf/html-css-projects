@@ -16,6 +16,7 @@ Variables
   --body-bcg: #18191a;
   --body-font: #f5f6f7;
   --nav-bcg: #242526;
+  --sidebar-hover: #2f3031;
   --nav-font: #f5f6f7;
   --footer-bcg: #1c1e21;
   --footer-font: #f5f6f7;
@@ -26,6 +27,7 @@ Variables
   --body-bcg: #ffffff;
   --body-font: #1c1e21;
   --nav-bcg: #ffffff;
+  --sidebar-hover: #f2f2f2;
   --nav-font: #606770;
   --footer-bcg: #f5f6f7;
   --footer-font: #606770;
@@ -58,7 +60,7 @@ Variables
   --ff-secondary: 'Caveat', cursive;
   --ff-tertiary: 'Libre Baskerville', serif;
   /* transitions */
-  --transition: all 0.5s linear;
+  --transition: all 0.2s linear;
   --long-transition: all 1.5s ease;
   /* spacing */
   --spacing: 0.1rem;
@@ -165,7 +167,7 @@ NAVBAR
   left: 0;
   z-index: 10;
   width: 100%;
-  box-shadow: 1px 0.5px 0.5px var(--body-bcg);
+  box-shadow: 1px 0.5px 0.5px var(--footer-bcg);
 }
 .nav-center {
   display: flex;
@@ -179,6 +181,9 @@ NAVBAR
   height: 0.15rem;
   margin: 6px 0;
   background: var(--body-font);
+}
+.nav-logo span {
+  cursor: pointer;
 }
 .nav-logo img {
   width: 1.8rem;
@@ -266,7 +271,7 @@ NAVBAR
   display: none;
 }
 
-#toggle-btn {
+.toggle-btn {
   background: #4d4d4d;
   outline: none;
   border: none;
@@ -281,7 +286,7 @@ NAVBAR
   padding: 0 4px;
   cursor: pointer;
 }
-#toggle-emoji {
+.toggle-emoji {
   position: absolute;
   font-size: 1.5rem;
   top: -10%;
@@ -304,6 +309,53 @@ NAVBAR
     display: inline;
   }
 }
+
+/* 
+========
+SIDEBAR
+========
+*/
+
+.sidebar {
+  background: var(--nav-bcg);
+  color: var(--nav-font);
+  width: 75vw;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: var(--transition);
+}
+.show-sidebar {
+  transform: translateX(0%);
+}
+.sidebar header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  box-shadow: 0px 2px 0px var(--footer-bcg);
+}
+.sidebar .nav-logo {
+  margin-right: 1rem;
+  width: 5.5rem;
+}
+
+.sidebar-links {
+  padding: 1.25rem 1rem;
+}
+
+.sidebar-link {
+  color: var(--nav-font);
+  transition: var(--transition);
+  display: block;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+}
+.sidebar-link:hover {
+  background: var(--sidebar-hover);
+}
+
 /* 
 ========
 AD-BOX
@@ -519,6 +571,9 @@ MEDIA QUERY
   }
   .nav-links {
     display: flex;
+  }
+  .sidebar {
+    display: none;
   }
   .ad-box {
     margin-top: 70px;
