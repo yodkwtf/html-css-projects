@@ -214,34 +214,24 @@
 
   <!-- JAVASCRIPT FOR DARK MODE -->
   <script>
-    let theme = 'light-theme';
-    window.addEventListener('DOMContentLoaded', () => {
-      document.documentElement.className = theme;
-    });
+    let theme = 'light';
+    window.addEventListener('DOMContentLoaded', () => changeTheme('🌞', theme));
     document.getElementById('toggle-btn').addEventListener('click', () => {
-      if (theme === 'light-theme') {
-        theme = 'dark-theme';
-        darkMode();
+      if (theme === 'light') {
+        theme = 'dark';
+        changeTheme('🌜', theme);
       } else {
-        theme = 'light-theme';
-        lightMode();
+        theme = 'light';
+        changeTheme('🌞', theme);
       }
-      document.documentElement.className = theme;
     });
 
-    // functions
-    const darkMode = () => {
-      document.getElementById('toggle-btn').innerHTML =
-        '<span id="toggle-emoji"></span>🌜';
-      document.getElementById('toggle-btn').style.textAlign = 'left';
-      ('all 0.2s linear');
-      document.getElementById('toggle-emoji').style.left = '40%';
-    };
-    const lightMode = () => {
-      document.getElementById('toggle-btn').innerHTML =
-        '<span id="toggle-emoji"></span>🌞';
-      document.getElementById('toggle-btn').style.textAlign = 'right';
-      document.getElementById('toggle-emoji').style.left = '-10%';
+    // function to toggle theme
+    const changeTheme = (emoji, theme) => {
+      document.documentElement.className = theme;
+      document.getElementById(
+        'toggle-btn'
+      ).innerHTML = `<span id="toggle-emoji"></span>${emoji}`;
     };
   </script>
 </html>

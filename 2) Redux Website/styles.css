@@ -10,7 +10,9 @@ html {
 Variables
 ===============
 */
-.dark-theme {
+.dark {
+  --emoji-alignment: left;
+  --toggle-btn-position: 50%;
   --body-bcg: #18191a;
   --body-font: #f5f6f7;
   --nav-bcg: #242526;
@@ -18,7 +20,9 @@ Variables
   --footer-bcg: #1c1e21;
   --footer-font: #f5f6f7;
 }
-.light-theme {
+.light {
+  --emoji-alignment: right;
+  --toggle-btn-position: -15%;
   --body-bcg: #ffffff;
   --body-font: #1c1e21;
   --nav-bcg: #ffffff;
@@ -54,7 +58,7 @@ Variables
   --ff-secondary: 'Caveat', cursive;
   --ff-tertiary: 'Libre Baskerville', serif;
   /* transitions */
-  --transition: all 0.2s linear;
+  --transition: all 0.5s linear;
   --long-transition: all 1.5s ease;
   /* spacing */
   --spacing: 0.1rem;
@@ -273,7 +277,7 @@ NAVBAR
   font-size: 1rem;
   vertical-align: middle;
   position: relative;
-  text-align: right;
+  text-align: var(--emoji-alignment);
   padding: 0 4px;
   cursor: pointer;
 }
@@ -281,7 +285,7 @@ NAVBAR
   position: absolute;
   font-size: 1.5rem;
   top: -10%;
-  left: -10%;
+  left: var(--toggle-btn-position);
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 50%;
