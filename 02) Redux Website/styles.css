@@ -162,12 +162,12 @@ NAVBAR
 
 .nav {
   background: var(--nav-bcg);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
-  box-shadow: 1px 0.5px 0.5px var(--footer-bcg);
+  box-shadow: 2px 2px 1px var(--footer-bcg);
 }
 .nav-center {
   display: flex;
@@ -358,46 +358,6 @@ SIDEBAR
 
 /* 
 ========
-AD-BOX
-========
-*/
-
-.ad-box {
-  background: var(--clr-black-bcg);
-  color: var(--clr-white);
-  text-transform: capitalize;
-  margin: 60px auto 0;
-  padding: 8px 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-.ad-box p {
-  color: var(--clr-white);
-  line-height: 1;
-  margin-bottom: 0;
-}
-.ad-box #sp-text {
-  border: 1px solid;
-  padding: 1rem 1.5rem;
-  margin-left: 0.5rem;
-}
-.ad-box #sp-text:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 490px) {
-  .ad-box {
-    flex-direction: column;
-  }
-  p {
-    margin-top: 8px;
-  }
-}
-
-/* 
-========
 BANNER
 ========
 */
@@ -574,9 +534,6 @@ MEDIA QUERY
   }
   .sidebar {
     display: none;
-  }
-  .ad-box {
-    margin-top: 70px;
   }
   .services {
     grid-template-columns: repeat(4, 1fr);
