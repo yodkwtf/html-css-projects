@@ -4,7 +4,7 @@ A website built with just html and css where the UI looks like different forms o
 
 ## Preview
 
-[Glass UI Website](https://glassuiwebsite-dk.netlify.app/)
+[Glass UI Website - Live](https://glassuiwebsite-dk.netlify.app/)
 
 ## Things to Learn
 
