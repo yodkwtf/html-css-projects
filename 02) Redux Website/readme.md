@@ -4,7 +4,7 @@ A clone of the official reduxjs website using css flexbox, grid, and media queri
 
 ## Preview
 
-[Redux Website - Clone](https://reduxwebsite-dk.netlify.app/)
+[Redux Website Clone - Live](https://reduxwebsite-dk.netlify.app/)
 
 ## Things to Learn
 
