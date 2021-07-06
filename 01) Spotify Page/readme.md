@@ -4,7 +4,7 @@ A clone of the official spotify premium page using css features like flexbox, gr
 
 ## Preview
 
-[Spotify Premium Page - Clone](https://spotifypage-dk.netlify.app/)
+[Spotify Premium Page Clone - Live](https://spotifypage-dk.netlify.app/)
 
 ## Things to Learn
 
