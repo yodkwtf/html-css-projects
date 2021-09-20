@@ -9,5 +9,5 @@ For more info regarding a specific project, navigate to that project's directory
 1. [Spotify Premium Page - Clone](https://spotifypage-dk.netlify.app/)
 2. [Redux Website - Clone](https://reduxwebsite-dk.netlify.app/)
 3. [Glass UI Website](https://glassuiwebsite-dk.netlify.app/)
-4. [SVG Text Animation - Live](https://svgtextanimation-dk.netlify.app/)
-5. [SVG Shapes Animation - Live](https://svgshapesanimation-dk.netlify.app/)
+4. [SVG Text Animation](https://svgtextanimation-dk.netlify.app/)
+5. [SVG Shapes Animation](https://svgshapesanimation-dk.netlify.app/)
