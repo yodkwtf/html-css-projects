@@ -69,6 +69,7 @@ main {
   height: 100%;
   width: 100%;
   background: url('./card-bcg.jpg') center/cover fixed no-repeat;
+  background-color: whitesmoke;
   border-bottom: 20px solid var(--clr-primary);
   padding-top: 3rem;
   color: var(--clr-primary);
