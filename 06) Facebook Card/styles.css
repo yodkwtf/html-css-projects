@@ -43,6 +43,16 @@ main {
   perspective: 1500px;
 }
 
+/* flip */
+
+.facebook-card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.facebook-card:hover .card-back {
+  transform: rotateY(0);
+}
+
 .card {
   position: absolute;
   top: 0;
@@ -71,7 +81,7 @@ main {
   margin: 3rem 0 1rem;
 }
 .title {
-  display: inline-block;
+  font-weight: bolder;
 }
 .card-front p {
   line-height: 1.4;
@@ -87,12 +97,33 @@ main {
   transform: rotateY(-180deg);
 }
 
-/* flip */
+/* making it responsive */
 
-.facebook-card:hover .card-front {
-  transform: rotateY(180deg);
-}
+@media (max-width: 535px) {
+  .facebook-card {
+    width: 22rem;
+    height: 12.5rem;
+  }
 
-.facebook-card:hover .card-back {
-  transform: rotateY(0);
+  .card-front {
+    border-bottom: 14.5px solid var(--clr-primary);
+    padding-top: 2rem;
+  }
+
+  .CEO {
+    font-size: 1.25rem;
+  }
+
+  .name {
+    font-size: 1rem;
+    margin: 1.75rem 0 0.65rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .card-back {
+    font-size: 3.5rem;
+  }
 }
