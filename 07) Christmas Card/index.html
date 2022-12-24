@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas! 🎄</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="card">
+    <!-- left card -->
+    <article class="left-card">
+      <!-- front -->
+      <div class="front">
+        <h4>Click Me</h4>
+        <img src="./images/tree.png" alt="Christmas Tree">
+      </div>
+
+      <!-- back -->
+      <div class="back">
+        <img src="./images/santa.png" alt="Santa Claus">
+      </div>
+    </article>
+
+
+    <!-- right card -->
+    <article class="right-card">
+      <h3>Merry Christmas ✨</h3>
+      <small>Wishing you a bright and beautiful season of joy.</small>
+    </article>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    Created by
+    <!-- link -->
+    <a href="http://yodkwtf.com" target="_blank" class="link" title="I create websites and stuff">
+      Durgesh
+    </a>
+
+    <!-- twitter -->
+    <a href="https://twitter.com/yodkwtf" class="icon" id="twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <!-- insta -->
+    <a href="https://www.github.com/yodkwtf" class="icon" id="github">
+      <i class="fab fa-github"></i>
+    </a>
+    <!-- linkedin -->
+    <a href="https://www.linkedin.com/in/durgesh-chaudhary/" class="icon" id="linkedin">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </footer>
+  <!-- END OF FOOTER -->
+
+</body>
+
+<script>
+  const card = document.querySelector('.card');
+
+  card.addEventListener('click', function () {
+    card.classList.toggle('is-flipped');
+  });
+
+</script>
+
+</html>

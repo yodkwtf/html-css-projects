@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./images/bcg.jpg') center/cover fixed no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  cursor: url('./images/cursor-2.png'), auto;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  transition: left 1.5s;
+  cursor: url('./images/cursor.png'), auto;
+
+  perspective: 1400px;
+}
+.card.is-flipped {
+  left: 50px;
+}
+
+/* left-card */
+.left-card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+  z-index: 1;
+
+  /* flip the card when clicked */
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+  transform-origin: 0 0;
+}
+
+.left-card img {
+  width: 100%;
+}
+
+/* left-card front */
+.left-card .front,
+.left-card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* hide the element when they're flipped over */
+  backface-visibility: hidden;
+}
+
+.left-card .front h4 {
+  position: absolute;
+  top: 0.5rem;
+  text-align: center;
+  width: 100%;
+  color: crimson;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* left-card back */
+.left-card .back {
+  background: #444;
+
+  transform: rotateY(180deg);
+}
+
+/* open card */
+.card.is-flipped .left-card {
+  transform: rotateY(-180deg);
+}
+
+/* right-card */
+.right-card {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(175, 27, 27, 0.85);
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.right-card h3 {
+  color: gold;
+  text-shadow: 1px 0px 2px black;
+  letter-spacing: 1px;
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+/* responsiveness */
+@media (min-width: 320px) {
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  .card.is-flipped {
+    left: 75px;
+  }
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 180px;
+    height: 180px;
+  }
+  .card.is-flipped {
+    left: 90px;
+  }
+  .right-card {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 420px) {
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .card.is-flipped {
+    left: 100px;
+  }
+
+  .right-card {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 520px) {
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+  .card.is-flipped {
+    left: 125px;
+  }
+  .right-card h3 {
+    font-size: 2rem;
+  }
+  .right-card {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 620px) {
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+  .card.is-flipped {
+    left: 150px;
+  }
+}
+
+@media (min-width: 750px) {
+  .card {
+    width: 350px;
+    height: 350px;
+  }
+  .card.is-flipped {
+    left: 175px;
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    width: 400px;
+    height: 400px;
+  }
+  .card.is-flipped {
+    left: 200px;
+  }
+}
+
+/* 
+=====================
+FOOTER
+=====================
+*/
+
+footer {
+  color: #fff;
+  background: #111;
+  text-align: center;
+  width: 100%;
+  padding: 0.75rem;
+  letter-spacing: 1px;
+  cursor: initial;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .link:hover,
+footer .icon i:hover {
+  color: #fff;
+}
+
+footer .link {
+  color: #00995e;
+  transition: 0.3s all linear;
+  font-weight: bold;
+  padding-right: 0.5rem;
+  border-right: 3px solid #fff;
+  margin-right: 1rem;
+}
+footer .icon {
+  font-size: 1.25rem;
+  vertical-align: middle;
+  line-height: 1;
+  margin-right: 0.5rem;
+}
+footer .icon i {
+  transition: 0.3s all linear;
+}
+
+#twitter {
+  color: #00a7e7;
+}
+#github {
+  color: #fff;
+}
+#linkedin {
+  color: #0073b1;
+}
