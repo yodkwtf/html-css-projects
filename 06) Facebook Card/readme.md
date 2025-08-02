@@ -4,7 +4,7 @@ A clone of Mark Zuckerberg's very first business card. It is a flipping card and
 
 ## Preview
 
-[Facebook Card - Live](https://facebookcard-dk.netlify.app/)
+[Facebook Card - Live](https://fbcard-dk.netlify.app/)
 
 ## Things to Learn
 
