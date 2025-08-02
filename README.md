@@ -11,5 +11,5 @@ For more info regarding a specific project, navigate to that project's directory
 3. [Glass UI Website](https://glassuiwebsite-dk.netlify.app/)
 4. [SVG Text Animation](https://svgtextanimation-dk.netlify.app/)
 5. [SVG Shapes Animation](https://svgshapesanimation-dk.netlify.app/)
-6. [Facebook Card](https://facebookcard-dk.netlify.app/)
+6. [Facebook Card](https://fbcard-dk.netlify.app/)
 7. [Christmas Card](https://merry-christmas-dk.netlify.app/)
